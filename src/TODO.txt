@@ -8,4 +8,6 @@ publish to github pages and add domain
 make it adapt to phone screen and 4k laptops
 
 add preview for projects
+
+later:
 update github readme and add good styles
