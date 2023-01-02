@@ -1,0 +1,11 @@
+add all details and make it similar to linkedin or resume
+add dark mode
+auto-detect time and auto-set dark mode
+add logos of technologies
+add logo of college & company when adding them
+
+publish to github pages and add domain
+make it adapt to phone screen and 4k laptops
+
+add preview for projects
+update github readme and add good styles
