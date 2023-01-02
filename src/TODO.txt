@@ -9,5 +9,18 @@ make it adapt to phone screen and 4k laptops
 
 add preview for projects
 
+add option to select their own color
+	add that option next to dark mode
+	add scss
+
+add github links and deployed links in Projects.jsx
+add all projects
+set different background color for important and non-important projects
+in projects, display logo of a framework instead of displaying name
+add technology logos on top of site
+
 later:
 update github readme and add good styles
+
+make correction in resume - add a task deposit Ether
+	replace with "A web app built with React and Solidity to add a task and deposit a reward for finishing the task."
