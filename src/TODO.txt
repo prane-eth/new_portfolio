@@ -10,7 +10,6 @@ add preview for projects
 
 add option to select their own color
 	add that option next to dark mode
-	add scss
 
 set different background color for important and non-important projects
 in projects, display logo of a framework instead of displaying name
