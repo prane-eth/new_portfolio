@@ -21,3 +21,4 @@ update github readme with good styles
 auto-detect time and auto-set dark mode
 	if any manual override, avoid auto-detect
 deploy all projects and add links to github repo and here
+when hovered on project for 0.5 sec, quick demo video should be opened
