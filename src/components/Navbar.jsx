@@ -1,14 +1,15 @@
 import { FaSun } from "react-icons/fa";
 import { HiOutlineMoon } from "react-icons/hi";
+import ProgressBar from 'react-progressbar-on-scroll'
 
 const Navbar = ({ darkMode, toggleDarkMode }) => (
 	<nav className="navbar">
 		<span className="waving-item">👋</span>
 		I am
 		<span id="name">Praneeth</span>
-		
+
 		<div className="navbar-links">
-			<a href="">Home</a>
+			<a href="#">Home</a>
 			<a href="#AboutMe">About Me</a>
 			<a href="#Skills">Skills</a>
 			<a href="#Experience">Experience</a>
@@ -20,8 +21,14 @@ const Navbar = ({ darkMode, toggleDarkMode }) => (
 			<span className="darkModeToggle" onClick={toggleDarkMode}>
 				{darkMode ? <FaSun /> : <HiOutlineMoon />}
 			</span>
-			{darkMode ? "Dark" : "Light"}
+			{darkMode ? "Dark" : "Light"} mode
 		</div>
+		<ProgressBar
+			height="5px"
+			color="#fca311"
+			gradient={true}
+			gradientColor="#fc0011"
+		/>
 	</nav>
 )
 

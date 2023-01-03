@@ -126,10 +126,10 @@ const Projects = () => {
 						<div className="project-links">
 							Links:
 							{project.github &&
-								<a href={project.github} target="_blank" rel="noreferrer"><FaGithub /></a>
+								<a href={project.github} target="_blank" rel="noreferrer"><FaGithub color="black" /></a>
 							}
 							{project.website && 
-								<a href={project.website} target="_blank" rel="noreferrer"><BsGlobe /></a>
+								<a href={project.website} target="_blank" rel="noreferrer"><BsGlobe color="blue" /></a>
 							}
 						</div>
 					</div>
