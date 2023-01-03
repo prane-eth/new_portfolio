@@ -1,5 +1,5 @@
 const About = () => (
-	<div className="about" id="About">
+	<div id="About">
 		<div className="about__content">
 			<h3>About Me</h3>
 			<p>

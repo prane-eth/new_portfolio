@@ -3,18 +3,15 @@ import { TbBrandJavascript } from 'react-icons/tb'
 import { SiSolidity } from 'react-icons/si'
 
 const Skills = () => (
-	<div className="skills" id="Skills">
+	<div id="Skills">
 		<h1>Skills</h1>
-		<div className="skills-container">
-			<h2>Technologies</h2>
-			<div className="skills-container">
-				<div> <FaReact /> React </div>
-				<div> <SiSolidity /> Solidity </div>
-				<div> <FaEthereum /> Ethereum (Web3) </div>
-				<div> <FaNodeJs /> Node.js </div>
-				<div> <TbBrandJavascript /> JavaScript </div>
-				<div> <FaPython /> Python </div>
-			</div>
+		<div className="skills-container-grid">
+			<span> <FaReact /> React </span>
+			<span> <SiSolidity /> Solidity </span>
+			<span> <FaEthereum /> Ethereum (Web3) </span>
+			<span> <FaNodeJs /> Node.js </span>
+			<span> <TbBrandJavascript /> JavaScript </span>
+			<span> <FaPython /> Python </span>
 		</div>
 	</div>
 )

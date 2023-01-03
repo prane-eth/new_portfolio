@@ -31,6 +31,13 @@
 	color: orange;
 }
 
+.skills-container-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	margin: 1rem;
+}
+
 .darkModeToggle {
 	margin-right: 1rem;
 	width: fit-content;

@@ -86,7 +86,7 @@ const Projects = () => {
 		},
 	]
 	return (
-		<div className="projects" id="Projects">
+		<div id="Projects">
 			<h1>Projects</h1>
 			<div className="projects-container">
 				{projects.map((project, index) => (

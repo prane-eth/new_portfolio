@@ -1,5 +1,5 @@
 const Achievements = () => (
-	<div className="achievements" id="Achievements">
+	<div id="Achievements">
 		<h1>Achievements</h1>
 		<p>
 			Won 3rd place in the hackathon TechEden,

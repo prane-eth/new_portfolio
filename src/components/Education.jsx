@@ -1,5 +1,5 @@
 const Education = () => (
-	<div className="education" id="Education">
+	<div id="Education">
 		<h1>Education</h1>
 		<div className="education-content">
 			<div className="education-content-left">

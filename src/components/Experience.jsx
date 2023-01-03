@@ -1,5 +1,5 @@
 const Experience = () => (
-	<div className="experience" id="Experience">
+	<div id="Experience">
 		<h1>Experience</h1>
 		<div className="experience-container">
 			<div className="experience-card">
