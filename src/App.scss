@@ -23,13 +23,21 @@
 	margin-top: 1rem;
 
 	// always display navbar on top of page
-	position: fixed;
+	position: sticky;
+	z-index: 1;
+	background: #f9f9f9;
+	box-shadow: 0 0.5px 15px orange;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 #name {
 	font-size: 2rem;
 	font-weight: bold;
 	margin-left: 1rem;
-	color: orange;
+	color: rgb(255, 102, 0);
 }
 
 .navbar-links {

@@ -1,4 +1,4 @@
-make navbar fixed
+fix issue with content below navbar
 add logo of college & company when adding them
 	if failed to load, hide the div
 
