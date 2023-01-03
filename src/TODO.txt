@@ -1,8 +1,7 @@
-add all details and make it similar to linkedin or resume
 add dark mode
-auto-detect time and auto-set dark mode
 add logos of technologies
 add logo of college & company when adding them
+	if failed to load, hide the div
 
 publish to github pages and add domain
 make it adapt to phone screen and 4k laptops
@@ -13,14 +12,12 @@ add option to select their own color
 	add that option next to dark mode
 	add scss
 
-add github links and deployed links in Projects.jsx
-add all projects
 set different background color for important and non-important projects
 in projects, display logo of a framework instead of displaying name
 add technology logos on top of site
 
 later:
-update github readme and add good styles
-
-make correction in resume - add a task deposit Ether
-	replace with "A web app built with React and Solidity to add a task and deposit a reward for finishing the task."
+update github readme with good styles
+auto-detect time and auto-set dark mode
+	if any manual override, avoid auto-detect
+deploy all projects and add links to github repo and here
