@@ -7,9 +7,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => (
 		I am
 		<span id="name">Praneeth</span>
 		
-		<div className="links">
+		<div className="navbar-links">
 			<a href="">Home</a>
-			<a href="#About">About</a>
+			<a href="#AboutMe">About Me</a>
 			<a href="#Skills">Skills</a>
 			<a href="#Experience">Experience</a>
 			<a href="#Education">Education</a>
@@ -20,6 +20,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => (
 			<span className="darkModeToggle" onClick={toggleDarkMode}>
 				{darkMode ? <FaSun /> : <HiOutlineMoon />}
 			</span>
+			{darkMode ? "Dark" : "Light"}
 		</div>
 	</nav>
 )

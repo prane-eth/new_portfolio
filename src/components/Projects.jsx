@@ -1,5 +1,8 @@
 import { FaGithub } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
+import { FaReact, FaNodeJs, FaPython, FaEthereum, FaHtml5, FaCss3, FaAndroid, FaJava, FaPhp, FaRaspberryPi } from 'react-icons/fa'
+import { TbBrandJavascript } from 'react-icons/tb'
+import { SiSolidity, SiMongodb, SiMysql } from 'react-icons/si'
 
 const Projects = () => {
 	const projects = [
@@ -85,23 +88,49 @@ const Projects = () => {
 			important: false
 		},
 	]
+	const getTechIcon = (name) => {
+		if (name === "React") return <FaReact />
+		if (name === "Node.js") return <FaNodeJs />
+		if (name === "Python") return <FaPython />
+		if (name === "Solidity") return <SiSolidity />
+		if (name === "Ethereum (web3)") return <FaEthereum />
+		if (name === "MongoDB") return <SiMongodb />
+		if (name === "JS" || name === "JavaScript") return <TbBrandJavascript />
+		if (name === "Flask") return null
+		if (name === "MySQL") return <SiMysql />
+		if (name === "HTML") return <FaHtml5 />
+		if (name === "CSS") return <FaCss3 />
+		if (name === "Android") return <FaAndroid />
+		if (name === "Java") return <FaJava />
+		if (name === "PHP") return <FaPhp />
+		if (name === "Raspberry Pi") return <FaRaspberryPi />
+		return name
+	}
 	return (
 		<div id="Projects">
 			<h1>Projects</h1>
 			<div className="projects-container">
 				{projects.map((project, index) => (
 					<div className="project-card" key={index}>
-						<h2>{project.title}</h2>
-						<h3>{project.duration}</h3>
+						<h2>{project.title}</h2> - {project.duration}
 						<p>{project.description}</p>
 						<div className="project-techstack">
-							{project.techStack.map((tech, index) => (
-								<span key={index}>{tech}</span>
-							))}
+							{project.techStack &&
+								<>
+									Tech stack: {project.techStack.map((tech, index) => (
+										<span key={index} title={tech}>{getTechIcon(tech)}</span>
+									))}
+								</>
+							}
 						</div>
 						<div className="project-links">
-							<FaGithub href={project.github} target="_blank" rel="noreferrer" />
-							<BsGlobe href={project.website} target="_blank" rel="noreferrer" />
+							Links:
+							{project.github &&
+								<a href={project.github} target="_blank" rel="noreferrer"><FaGithub /></a>
+							}
+							{project.website && 
+								<a href={project.website} target="_blank" rel="noreferrer"><BsGlobe /></a>
+							}
 						</div>
 					</div>
 				))}

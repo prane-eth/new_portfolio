@@ -1,4 +1,5 @@
 .mainContainer {
+	transition: 1s;
 	background: radial-gradient(
 		circle,
 		rgba(253, 255, 162, 1) 0%,
@@ -31,6 +32,29 @@
 	color: orange;
 }
 
+.navbar-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 1rem;
+	// hide underline of link
+	a {
+		margin-left: 1rem;
+		text-decoration: none;
+		color: purple;
+		&:hover {
+			color: orange;
+			transition: 0.5s;
+		}
+	}
+}
+
+.project-card {
+	h2 {
+		display: inline;
+	}
+}
+
 .skills-container-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -40,6 +64,7 @@
 
 .darkModeToggle {
 	margin-right: 1rem;
+	margin-left: 1rem;
 	width: fit-content;
 	box-shadow: 0 0.5px 15px orange;
 	border-radius: 50%;
@@ -48,6 +73,7 @@
 }
 
 .darkmode {
+	transition: 1s;
 	background: radial-gradient(
 		circle,
 		rgba(30, 30, 30, 1) 0%,
@@ -58,6 +84,11 @@
 		color: white;
 		&:hover {
 			background: slategrey;
+		}
+	}
+	.navbar-links {
+		a {
+			color: violet;
 		}
 	}
 }
