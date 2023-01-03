@@ -3,7 +3,7 @@ import { HiOutlineMoon } from "react-icons/hi";
 import ProgressBar from 'react-progressbar-on-scroll'
 
 const Navbar = ({ darkMode, toggleDarkMode }) => (
-	<nav className="navbar">
+	<nav id="navbar">
 		<span className="waving-item">👋</span>
 		I am
 		<span id="name">Praneeth</span>

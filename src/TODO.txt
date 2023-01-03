@@ -1,4 +1,4 @@
-add logos of technologies
+make navbar fixed
 add logo of college & company when adding them
 	if failed to load, hide the div
 
