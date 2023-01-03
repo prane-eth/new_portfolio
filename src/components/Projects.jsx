@@ -1,5 +1,5 @@
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LanguageIcon from "@material-ui/icons/Language";
+import { FaGithub } from "react-icons/fa";
+import { BsGlobe } from "react-icons/bs";
 
 const Projects = () => {
 	const projects = [
@@ -7,7 +7,7 @@ const Projects = () => {
 			title: "Invoice payment system with web3",
 			duration: "Dec 2022",
 			description: "A web app built with React and Solidity to add and pay invoices using the PAN number of the seller and the buyer.",
-			techStack: ["React", "Solidity", "Web3", "Ethereum"],
+			techStack: ["React", "Solidity", "Ethereum (web3)"],
 			github: "https://github.com/vh-praneeth/web3_projects/tree/main/invoice_app-client",
 			website: "https://savory-mahogany-lemon.glitch.me/",
 			important: true
@@ -16,7 +16,7 @@ const Projects = () => {
 			title: "TODO-list with web3",
 			duration: "Nov 2022",
 			description: "A web app built with React and Solidity to add a task and deposit a reward for finishing the task.",
-			techStack: ["React", "Solidity", "Web3", "Ethereum"],
+			techStack: ["React", "Solidity", "Ethereum (web3)"],
 			github: "https://github.com/vh-praneeth/web3_projects/tree/main/todo-client",
 			website: "https://river-fork-persimmon.glitch.me/",
 			important: true
@@ -100,8 +100,8 @@ const Projects = () => {
 							))}
 						</div>
 						<div className="project-links">
-							<GitHubIcon href={project.github} target="_blank" rel="noreferrer" />
-							<LanguageIcon href={project.website} target="_blank" rel="noreferrer" />
+							<FaGithub href={project.github} target="_blank" rel="noreferrer" />
+							<BsGlobe href={project.website} target="_blank" rel="noreferrer" />
 						</div>
 					</div>
 				))}
@@ -110,7 +110,7 @@ const Projects = () => {
 				<div className="project-card">
 					<h2>More projects</h2>
 					<div className="project-links">
-						<GitHubIcon href="https://github.com/vh-praneeth?tab=repositories" target="_blank" rel="noreferrer" />
+						<FaGithub href="https://github.com/vh-praneeth?tab=repositories" target="_blank" rel="noreferrer" />
 					</div>
 				</div>
 			</div>
