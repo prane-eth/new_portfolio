@@ -1,4 +1,3 @@
-add dark mode
 add logos of technologies
 add logo of college & company when adding them
 	if failed to load, hide the div

@@ -20,6 +20,6 @@ const Experience = () => (
 			</div>
 		</div>
 	</div>
-);
+)
 
-export default Experience;
+export default Experience

@@ -1,5 +1,5 @@
 const Education = () => (
-	<div className="education">
+	<div className="education" id="Education">
 		<h1>Education</h1>
 		<div className="education-content">
 			<div className="education-content-left">
@@ -12,5 +12,6 @@ const Education = () => (
 			</div>
 		</div>
 	</div>
-);
-export default Education;
+)
+
+export default Education

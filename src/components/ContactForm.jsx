@@ -38,6 +38,6 @@ const ContactForm = () => {
 			<button type="submit">Send</button>
 		</form>
 	);
-};
+}
 
-export default ContactForm;
+export default ContactForm
