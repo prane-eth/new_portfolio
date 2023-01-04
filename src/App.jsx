@@ -38,7 +38,7 @@ function App() {
           <h1 className="sectionName">
             {componentNames.hasOwnProperty(Component.name) ? componentNames[Component.name] : Component.name}
           </h1>
-          <Component />
+          <Component darkMode={darkMode} />
         </div>
       ))}
       <h1 className="sectionName">Contact Me</h1>

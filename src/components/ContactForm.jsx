@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { FaEnvelope } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { CgMail } from "react-icons/cg";
 
 const ContactForm = () => {
 	const [name, setName] = useState('');
@@ -19,10 +19,10 @@ const ContactForm = () => {
 		<form onSubmit={handleSubmit} className="flex-vertical">
 			<div className="flex-horizontal">
 				<a href="mailto:haripraneethv@gmail.com">
-					<FaEnvelope color="red" className="icon-large" />
+					<CgMail color="#db4437" className="icon-large" />
 				</a>
 				<a href="https://wa.me/918367458273">
-					<FaWhatsapp color="green" className="icon-large" />
+					<FaWhatsapp color="#25d366" className="icon-large" />
 				</a>
 			</div>
 			<div className="flex-horizontal">

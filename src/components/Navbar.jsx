@@ -5,7 +5,7 @@ import ProgressBar from 'react-progressbar-on-scroll'
 const Navbar = ({ darkMode, toggleDarkMode }) => (
 	<nav id="navbar">
 		<span className="waving-item">👋</span>
-		I am
+		<span className="i-am-text">I am</span>
 		<span id="name">Praneeth</span>
 
 		<div className="navbar-links">
@@ -21,7 +21,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => (
 			<span className="darkModeToggle" onClick={toggleDarkMode}>
 				{darkMode ? <FaSun /> : <HiOutlineMoon />}
 			</span>
-			{darkMode ? "Dark" : "Light"} mode
+			<span className="darkModeToggleText" onClick={toggleDarkMode}>
+				← {darkMode ? "Light" : "Dark"} mode
+			</span>
 		</div>
 		<ProgressBar
 			height="5px"

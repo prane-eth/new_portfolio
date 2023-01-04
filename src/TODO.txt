@@ -1,7 +1,6 @@
-search online for different color for icons during dark mode
+make it adapt to phone screen and 4k laptops
 
 publish to github pages and add domain
-make it adapt to phone screen and 4k laptops
 
 add preview for projects
 
