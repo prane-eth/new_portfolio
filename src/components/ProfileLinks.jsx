@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { SlGlobe } from 'react-icons/sl';
 
-const Links = () => (
+const ProfileLinks = () => (
 	<div id="Links" className="flex-horizontal">
 		<a href={"https://github.com/vh-praneeth/"}>
 			<FaGithub color="black" className="icon-large" />
@@ -15,4 +15,4 @@ const Links = () => (
 	</div>
 )
 
-export default Links
+export default ProfileLinks

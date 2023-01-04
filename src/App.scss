@@ -23,17 +23,31 @@
 	margin: 1rem;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+
+	// align children top to bottom
+	align-items: flex-start;
 }
 .sectionName {
 	font-size: 1.5rem;
 	font-weight: bold;
-	margin-right: 1rem;
+	margin-right: 5rem;
 	color: blue;
+	width: fit-content;
+
+	// make it stick to top as long as div is visible
+	position: sticky;
+	top: 5rem;
 }
 
 .icon-large {
 	font-size: 2rem;
 	margin-right: 0.5rem;
+}
+.logo {
+	width: 2rem;
+	height: 2rem;
+	margin-right: 0.5rem;
+	margin-top: 0.1rem;
 }
 
 .mainContainer {

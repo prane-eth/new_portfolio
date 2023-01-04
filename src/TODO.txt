@@ -1,6 +1,4 @@
-move category names to fixed position on left, and make them sticky
-add logo of college & company when adding them
-	if failed to load, hide the div
+search online for different color for icons during dark mode
 
 publish to github pages and add domain
 make it adapt to phone screen and 4k laptops

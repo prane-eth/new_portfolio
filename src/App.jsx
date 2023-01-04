@@ -8,7 +8,7 @@ import Education from './components/Education'
 import Projects from './components/Projects'
 import Achievements from './components/Achievements'
 import Skills from './components/Skills'
-import Links from './components/Links'
+import ProfileLinks from './components/ProfileLinks'
 import ContactForm from './components/ContactForm'
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
     if (localDarkMode) setDarkMode(JSON.parse(localDarkMode));
   }, []);
 
-  const componentsToRender = [AboutMe, Skills, Experience, Education, Projects, Achievements, Links];
+  const componentsToRender = [AboutMe, Skills, Experience, Education, Projects, Achievements, ProfileLinks];
   const componentNames = {
     "AboutMe": "About Me",
     "Links": "Profile links",
@@ -36,7 +36,7 @@ function App() {
       {componentsToRender.map((Component, index) => (
         <div className="flex-horizontal sectionDiv" key={index}>
           <h1 className="sectionName">
-            {componentNames[Component.name] || Component.name}
+            {componentNames.hasOwnProperty(Component.name) ? componentNames[Component.name] : Component.name}
           </h1>
           <Component />
         </div>
