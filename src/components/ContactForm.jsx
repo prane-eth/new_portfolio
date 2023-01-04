@@ -18,21 +18,25 @@ const ContactForm = () => {
 	return (
 		<form onSubmit={handleSubmit} className="flex-vertical">
 			<div className="flex-horizontal">
-				<FaEnvelope href="mailto:haripraneethv@gmail.com" />
-				<FaWhatsapp href="https://wa.me/918367458273" />
+				<a href="mailto:haripraneethv@gmail.com">
+					<FaEnvelope color="red" className="icon-large" />
+				</a>
+				<a href="https://wa.me/918367458273">
+					<FaWhatsapp color="green" className="icon-large" />
+				</a>
 			</div>
 			<div className="flex-horizontal">
-				<label htmlFor="name">Name</label>
+				<label htmlFor="nameInForm">Name</label>
 				<input
 					type="text"
-					id="name"
+					id="nameInForm"
 					value={name}
 					onChange={(e) => setName(e.target.value)}
 				/>
-				<label htmlFor="email">Email</label>
+				<label htmlFor="emailInForm">Email</label>
 				<input
 					type="email"
-					id="email"
+					id="emailInForm"
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 				/>

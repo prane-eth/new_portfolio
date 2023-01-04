@@ -9,7 +9,6 @@ import Projects from './components/Projects'
 import Achievements from './components/Achievements'
 import Skills from './components/Skills'
 import Links from './components/Links'
-import ContactMe from './components/ContactMe'
 import ContactForm from './components/ContactForm'
 
 function App() {
@@ -25,10 +24,9 @@ function App() {
     if (localDarkMode) setDarkMode(JSON.parse(localDarkMode));
   }, []);
 
-  const componentsToRender = [AboutMe, Skills, Experience, Education, Projects, Achievements, Links, ContactMe];
+  const componentsToRender = [AboutMe, Skills, Experience, Education, Projects, Achievements, Links];
   const componentNames = {
     "AboutMe": "About Me",
-    "ContactMe": "Contact Me",
     "Links": "Profile links",
   }
 
@@ -43,6 +41,7 @@ function App() {
           <Component />
         </div>
       ))}
+      <h1 className="sectionName">Contact Me</h1>
       <ContactForm />
     </div>
   )
