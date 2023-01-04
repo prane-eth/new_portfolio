@@ -108,39 +108,36 @@ const Projects = () => {
 	}
 	return (
 		<div id="Projects">
-			<h1>Projects</h1>
-			<div className="projects-container">
-				{projects.map((project, index) => (
-					<div className="project-card" key={index}>
-						<h2>{project.title}</h2> - {project.duration}
-						<p>{project.description}</p>
-						<div className="project-techstack">
-							{project.techStack &&
-								<>
-									Tech stack: {project.techStack.map((tech, index) => (
-										<span key={index} title={tech}>{getTechIcon(tech)}</span>
-									))}
-								</>
-							}
-						</div>
-						<div className="project-links">
-							Links:
-							{project.github &&
-								<a href={project.github} target="_blank" rel="noreferrer"><FaGithub color="black" /></a>
-							}
-							{project.website && 
-								<a href={project.website} target="_blank" rel="noreferrer"><BsGlobe color="blue" /></a>
-							}
-						</div>
+			{projects.map((project, index) => (
+				<div className="project-card" key={index}>
+					<h2>{project.title}</h2> - {project.duration}
+					<p>{project.description}</p>
+					<div className="project-techstack">
+						{project.techStack &&
+							<>
+								Tech stack: {project.techStack.map((tech, index) => (
+									<span key={index} title={tech}>{getTechIcon(tech)}</span>
+								))}
+							</>
+						}
 					</div>
-				))}
-
-				{/* show github logo for more projects */}
-				<div className="project-card">
-					<h2>More projects</h2>
 					<div className="project-links">
-						<FaGithub href="https://github.com/vh-praneeth?tab=repositories" target="_blank" rel="noreferrer" />
+						Links:
+						{project.github &&
+							<a href={project.github} target="_blank" rel="noreferrer"><FaGithub color="black" /></a>
+						}
+						{project.website &&
+							<a href={project.website} target="_blank" rel="noreferrer"><BsGlobe color="blue" /></a>
+						}
 					</div>
+				</div>
+			))}
+
+			{/* show github logo for more projects */}
+			<div className="project-card">
+				<h2>More projects</h2>
+				<div className="project-links">
+					<FaGithub href="https://github.com/vh-praneeth?tab=repositories" target="_blank" rel="noreferrer" />
 				</div>
 			</div>
 		</div>

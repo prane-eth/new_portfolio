@@ -1,4 +1,4 @@
-fix issue with content below navbar
+move category names to fixed position on left, and make them sticky
 add logo of college & company when adding them
 	if failed to load, hide the div
 

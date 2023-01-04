@@ -1,3 +1,36 @@
+@mixin flex-layout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-horizontal {
+	@include flex-layout;
+}
+.flex-vertical {
+	@include flex-layout;
+	flex-direction: column;
+}
+
+// under sectionDiv, keep sectionName to left and sticky
+.sectionDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f9f9f9;
+	box-shadow: 0 0.5px 15px orange;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	margin: 1rem;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.sectionName {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-right: 1rem;
+	color: blue;
+}
+
 .mainContainer {
 	transition: 1s;
 	background: radial-gradient(
@@ -10,7 +43,6 @@
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 #navbar {
@@ -98,6 +130,13 @@
 		a {
 			color: violet;
 		}
+	}
+	.sectionDiv {
+		background: #333;
+		color: white;
+	}
+	.sectionName {
+		color: white;
 	}
 }
 

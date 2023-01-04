@@ -24,18 +24,25 @@ function App() {
 		const localDarkMode = localStorage.getItem("darkMode");
     if (localDarkMode) setDarkMode(JSON.parse(localDarkMode));
   }, []);
-  
+
+  const componentsToRender = [AboutMe, Skills, Experience, Education, Projects, Achievements, Links, ContactMe];
+  const componentNames = {
+    "AboutMe": "About Me",
+    "ContactMe": "Contact Me",
+    "Links": "Profile links",
+  }
+
   return (
     <div className={darkMode ? "mainContainer darkmode" : "mainContainer"}>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <AboutMe />
-      <Skills />
-      <Experience />
-      <Education />
-      <Projects />
-      <Achievements />
-      <Links />
-      <ContactMe />
+      {componentsToRender.map((Component, index) => (
+        <div className="flex-horizontal sectionDiv" key={index}>
+          <h1 className="sectionName">
+            {componentNames[Component.name] || Component.name}
+          </h1>
+          <Component />
+        </div>
+      ))}
       <ContactForm />
     </div>
   )
