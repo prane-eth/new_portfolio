@@ -1,17 +1,13 @@
-make it adapt to phone screen and 4k laptops
-
-publish to github pages and add domain
-
-add preview for projects
-
+current:
 add option to select their own color
 	add that option next to dark mode
-
 set different background color for important and non-important projects
-in projects, display logo of a framework instead of displaying name
-add technology logos on top of site
+make it adapt to phone screen and 4k laptops
 
 later:
+publish to github pages and add domain
+add preview for projects
+
 update github readme with good styles
 auto-detect time and auto-set dark mode
 	if any manual override, avoid auto-detect
