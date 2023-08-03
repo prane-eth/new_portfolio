@@ -3,7 +3,7 @@ import { SlGlobe } from 'react-icons/sl';
 import { githubUrl, username, linktree_username } from './constants';
 
 const ProfileLinks = () => (
-	<div id="Links" className="flex-horizontal">
+	<div id="ProfileLinks" className="flex-horizontal">
 		<a href={githubUrl}>
 			<FaGithub color="black" className="icon-large" />
 		</a>

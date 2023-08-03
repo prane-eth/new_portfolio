@@ -1,6 +1,6 @@
 import { FaReact, FaNodeJs, FaPython, FaEthereum } from 'react-icons/fa'
 import { TbBrandJavascript } from 'react-icons/tb'
-import { SiSolidity } from 'react-icons/si'
+import { SiDjango, SiMongodb, SiSolidity } from 'react-icons/si'
 
 const Skills = ({ darkMode }) => (
 	<div id="Skills" className="skills-container-grid">
@@ -18,7 +18,9 @@ const Skills = ({ darkMode }) => (
 			Node.js
 		</span>
 		<span> <TbBrandJavascript color="#f0db4f" className='icon-large' /> JavaScript </span>
+		<span> <SiMongodb color="#4db33d" className='icon-large' /> MongoDB </span>
 		<span> <FaPython color="#ffd43b" className='icon-large' /> Python </span>
+		<span> <SiDjango color="#092e20" className='icon-large' /> Django </span>
 	</div>
 )
 

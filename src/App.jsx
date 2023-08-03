@@ -4,6 +4,7 @@ import './App.scss'
 import Navbar from './components/Navbar'
 import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
+import Internships from './components/Internships'
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Achievements from './components/Achievements'
@@ -24,19 +25,19 @@ function App() {
     if (localDarkMode) setDarkMode(JSON.parse(localDarkMode));
   }, []);
 
-  const componentsToRender = [AboutMe, Skills, Experience, Education, Projects, Achievements, ProfileLinks];
+  const componentsList = [AboutMe, Skills, Experience, Internships, Education, Projects, Achievements, ProfileLinks];
   const componentNames = {
     "AboutMe": "About Me",
-    "Links": "Profile links",
+    "ProfileLinks": "Profile links",
   }
 
   return (
     <div className={darkMode ? "mainContainer darkmode" : "mainContainer"}>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      {componentsToRender.map((Component, index) => (
+      {componentsList.map((Component, index) => (
         <div className="flex-horizontal sectionDiv" key={index}>
           <h1 className="sectionName">
-            {componentNames.hasOwnProperty(Component.name) ? componentNames[Component.name] : Component.name}
+            {componentNames[Component.name] || Component.name}
           </h1>
           <Component darkMode={darkMode} />
         </div>

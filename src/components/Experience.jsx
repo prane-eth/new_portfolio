@@ -17,7 +17,7 @@ const Experience = () => (
 				Joined for internship in January 2022
 			</li>
 		</ul>
-		Skills learnt & used: React, Git, MongoDB, Kafka, MySQL, Spring Boot
+		Tech stack: React, Git, MongoDB, Kafka, MySQL, Spring Boot
 	</div>
 )
 
